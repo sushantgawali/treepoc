@@ -29,8 +29,8 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('cake.generic');
-        echo $this->Html->script('jquery.mjs.nestedSortable');
+		echo $this->Html->css(array('cake.generic','jquery-ui-1.9.0.custom','sortable'));
+        echo $this->Html->script(array('jquery-1.8.2','jquery-ui-1.9.0.custom','jquery.ui.sortable','jquery.mjs.nestedSortable'));
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
