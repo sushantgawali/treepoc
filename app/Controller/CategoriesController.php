@@ -8,12 +8,12 @@ App::uses('AppController', 'Controller');
 class CategoriesController extends AppController {
 
     public function display_tree(){
-
-        $this->Category->id = 5; // id of Extreme fishing
-        $this->Category->save(array('parent_id' => 6));
+//
+//        $this->Category->id = 5; // id of Extreme fishing
+//        $this->Category->save(array('parent_id' => 6));
         $data = $this->Category->generateTreeList(null, null, null, '--');
 //        $data = $this->Category->_setParent(14, 6);
-//        pr($data);
+        pr($data);
         $categories = $this->Category->find('all',array('fields'=>'Category.id'));
 //        pr($categories);
 
@@ -32,7 +32,7 @@ class CategoriesController extends AppController {
             }
         }
         $child = $this->Category->children(2,null,false);
-        pr($child);
+//        pr($child);
 
 
 //        $directChildren = $this->Category->children(1, true);
