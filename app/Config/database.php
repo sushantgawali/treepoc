@@ -64,7 +64,7 @@ class DATABASE_CONFIG {
 		'persistent' => false,
 		'host' => 'localhost',
 		'login' => 'root',
-		'password' => 'webonise6186',
+		'password' => 'root',
 		'database' => 'treepoc',
 		'prefix' => '',
 		//'encoding' => 'utf8',
